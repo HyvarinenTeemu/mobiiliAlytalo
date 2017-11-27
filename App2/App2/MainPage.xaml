@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App2"
+             x:Class="App2.MainPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout HorizontalOptions="Start">
+                <Label HorizontalTextAlignment="Center" Text="Alytalosovellus"></Label>
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center">
+                <Label HorizontalOptions="Center" Text="Valitse alla olevista vaihtoehdoista"></Label>
+                <Grid>
+                    <Button Grid.Column="0" Text="Sauna" Clicked="Sauna_Clicked"></Button>
+                    <Button Grid.Column="1" Text="Sauna" Clicked="Lämmöt_Clicked_1"></Button>
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

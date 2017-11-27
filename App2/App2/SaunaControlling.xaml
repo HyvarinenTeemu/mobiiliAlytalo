@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.SaunaControlling">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="Start">
+                <Label Text="{Binding WhoUsedLast}"/>
+                <Label Text="{Binding TaskModel.Title, Mode=TwoWay}" />
+                <Label Text="{Binding TaskModel.Duration, Mode=TwoWay}" />
+                    <Button Text="Hae kannan tiedot" Command="{Binding GetLastInfo}"></Button>
+                    <Button Text="Change text" Command="{Binding SaveCommand}"></Button>
+                <Label Text="{Binding Message}"></Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
